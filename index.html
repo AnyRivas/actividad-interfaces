@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">   
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <title>Table</title>
+
+
+</head>
+<body>
+    <table class="table table-striped table-hover">
+        <thead>
+            <tr>
+                <th class="table-primary">Platillo</th>
+                <th class="table-primary">Nombre</th>
+                <th class="table-primary">Pais de origen</th>
+                <th class="table-primary">Receta</th>
+                <th class="table-primary">¿Dónde comprar?</th>
+                <th class="table-primary">Opciones</th>
+            </tr>
+        </thead>
+        <tbody class="table-group-divider">
+            <tr>
+                <td>
+                    <figure class="figure">
+                        <img src="img/gallo en Chicha.jpg" width="60px" class="figure-img img-fluid rounded" alt="Imagen de gallo en Chicha">
+                        <figcaption class="figure-caption">Foto del platillo</figcaption>
+                    </figure>
+                </td>
+                <td>Gallo en Chicha</td>
+                <td>El Salvador</td>
+                <td><span class="badge text-bg-info"><i style="color: aliceblue ;" onclick="mensaje1()">Receta Gallo en Chicha</i></span></td>
+                <td><span class="badge text-bg-warning"><i class="bi bi-cash" style="font-size: 1rem"></i> Lugares cercanos</span></td>
+                <td>
+                    <button class="btn btn-info">
+                        <i class="bi bi-pencil-square" style="font-size: 1.5rem; color: aliceblue;"></i>
+                    </button>
+                    <button class="btn btn-danger">
+                        <i class="bi bi-archive-fill" style="font-size: 1.5rem; color: aliceblue;"></i>
+                    </button>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <figure class="figure">
+                        <img src="img/mariscada.jpg" width="60px" class="figure-img img-fluid rounded" alt="Imagen de Mariscada">
+                        <figcaption class="figure-caption">Foto del Platillo</figcaption>
+                    </figure>
+                </td>
+                <td>Mariscada</td>
+                <td>El Salvador</td>
+                <td><span class="badge text-bg-info"><i style="color: aliceblue ;" onclick="mensaje2()">Receta Mariscada</i></span></td>
+                <td><span class="badge text-bg-warning"><i class="bi bi-cash" style="font-size: 1rem"></i> Lugares cercanos</span></td>
+                <td>
+                    <button class="btn btn-info">
+                        <i class="bi bi-pencil-square" style="font-size: 1.5rem; color: aliceblue;"></i>
+                    </button>
+                    <button class="btn btn-danger">
+                        <i class="bi bi-archive-fill" style="font-size: 1.5rem; color: aliceblue;"></i>
+                    </button>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <figure class="figure">
+                        <img src="img/Quesadilla.jpg" width="60px" class="figure-img img-fluid rounded" alt="Imagen de Quesadilla">
+                        <figcaption class="figure-caption">Foto del platillo</figcaption>
+                    </figure>
+                </td>
+                <td>Quesadilla</td>
+                <td>El Salvador</td>
+                <td><span class="badge text-bg-info"><i style="color: aliceblue ;" onclick="mensaje3()">Receta Quesadilla</i></span></td>
+                <td><span class="badge text-bg-warning"><i class="bi bi-cash" style="font-size: 1rem"></i> Lugares cercanos</span></td>
+                <td>
+                    <button class="btn btn-info">
+                        <i class="bi bi-pencil-square" style="font-size: 1.5rem; color: aliceblue;"></i>
+                    </button>
+                    <button class="btn btn-danger">
+                        <i class="bi bi-archive-fill" style="font-size: 1.5rem; color: aliceblue;"></i>
+                    </button>
+                </td>
+            </tr>
+        </tbody>       
+    </table>
+</body>
+<!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script>
+        function mensaje1() {
+            Swal.fire({
+                imageAlt: 'Receta Gallo en Chicha',
+                title: 'Ingredientes', 
+                text: '1 kg de gallo  1 tasas de chicha, 1 tasa de agua, 1 cebolla picada, 1/2 chile ciruela,  1 diente de ajo, 1/4 taza de vino blanco',             
+                imageUrl: 'img/Gallo en chicha.jpg',
+                imageWidth: '100',  
+
+                })
+            
+        }
+</script>
+
+<script>
+    function mensaje2() {
+        Swal.fire({
+            imageAlt: 'Receta Mariscada',
+            title: 'Ingredientes', 
+            text: '1 cabeza de pescado de tu preferencia, 1 lb de camarones, 1/2 lb de calamares, 4 cangrejos, 4 jaibas, 1 lb de almejas, 1 pescado en trozos, 4 langostas, 1/2 cabeza de ajo, 2 tomates medianos, 1 cebolla, 1 chile morron, 1 ramo de cilantro y sal al gusto',             
+            imageUrl: 'img/Mariscada.jpg',
+            imageWidth: '100',  
+
+            })
+        
+    }
+</script>
+
+<script>
+    function mensaje3() {
+        Swal.fire({
+            imageAlt: 'Receta Quesadilla',
+            title: 'Ingredientes', 
+            text: '1 lb de queso fresco, 1/2 de requeson, 1/4 taza de crema, 1 lb de harina de arroz, 1/4 lb de harina de trigo, 2 huevo, 1 taza de azucar, 1/2 taza de leche, canela en polvo',             
+            imageUrl: 'img/Quesadilla.jpg',
+            imageWidth: '100',  
+
+            })
+        
+    }
+</script>
+</html>
